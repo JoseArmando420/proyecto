@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+/*todas las etiquetas body, p,etc*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+}
+
+/* clase --> .  */
+/* id --> #   */
+/* nombre del etiqueta*/
+
+#inicio{
+    background-color: aquamarine;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio header{
+    width: 100%;
+}
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+
+#inicio header .contenido-header .logo{
+    color: #010101;
+    font-size: 20px;
+    text-decoration: wavy;
+}
+
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#inicio header .contenido-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+
+
+#inicio header .contenido-header nav ul li a{
+    display: block;
+    color: #190202;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+
+#inicio header .contenido-header nav ul li a i{
+    display: block;
+    color: #1e1c1c;
+    margin-bottom: 10px;
+
+}
+
+
+#inicio header .contenido-header nav ul li:hover i{
+    color: #f0f1ec;
+    
+}
+
+
+#inicio header .contenido-header .social a{
+display: inline-block;
+background-color: #0f0e0d;
+text-decoration: none;
+color: aquamarine;
+padding: 10px 20px;
+border-radius: 50px;
+}
+
+#inicio header .contenido-header .social > i
+{
+    display: inline-block;
+    color: #a8a8a8;
+    margin-left: 20px;
+}
+
+.nav-responsive{
+    display: none;
+    font-size: 20px;
+    color: #a8a8a8;
+}
+
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+
+#inicio .carrusel .info
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+
+#inicio .carrusel .info button{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+
+
+#inicio .gallery-cell{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+.containe {
+    display: flex;
+    align-items: center; 
+}
+.containe img {
+    max-width: 150px; 
+    margin-right: 20px; 
+}
+.containe p {
+    text-align: justify;
+    font-size: 16px; 
+}
+
+/*fin header, inicio, nav*/
+
+/*  cont */
+
+#cont{
+    padding: 50px 0;
+}
+
+#cont h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#cont .fila{
+    display:flex;
+    max-width: 1200px;
+    margin: auto;
+}
+#cont .fila .item img{
+    max-width: 160px;
+}
+
+#cont .fila .item{
+    display: block;
+    align-items: center;
+    margin:20px 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+#cont .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+#cont .fila .item:hover{
+    background-color:aquamarine;
+}
+
+
+
+
+/* comentarios*/
+
+#comentarios{
+    padding: 50px 0px;
+}
+
+#comentarios h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.galeria-comentarios{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.galeria-comentarios .galeriacelda .item{
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.galeria-comentarios .galeriacelda img{
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 2px solid #1a1817;
+}
+
+.galeria-comentarios .galeriacelda h3{
+    margin-bottom: 7px;
+}
+
+/* contactos*/
+
+#contactos{
+    padding: 50px 0px;
+    background-color: black;
+}
+
+#contactos .fila{
+    display: flex;
+    max-width:1100px;
+    margin: auto;
+    justify-content: space-between;
+    color: #fff;
+
+}
+#contactos a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 3px;
+    text-transform: lowercase;
+}
+#contactos a:hover{
+    text-decoration: underline;
+}
+#contactos h3{
+    margin-bottom: 12px;
+}
+#contactos .media{
+    display: flex;
+    align-items: center;
+}
+#contactos .media i{
+    display: block;
+    margin-right: 10px;
+}
+#contactos input{
+    border: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+
+}
+#contactos textarea{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border: none;
+    padding: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    resize: none;
+    
+
+}
+
+#contactos .enviar{
+    background-color: #200e02;
+    color: #fff;
+    width: fit-content;
+    margin-top: 15px;
+    cursor: pointer;
+}
+@media screen and (max-width:1070px) {
+    
+    #inicio header .contenido-header .social{
+        display: none;
+    }
+    #inicio header .contenido-header nav {
+        position: static;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width:700px) {
+    #sabores .fila{
+        display: block;
+    }
+    #platos .fila{
+        display: block;
+        width: 100%;
+    }
+    #platos .fila .item{
+        width: 100%;
+    }
+    #contactos .fila{
+        display: block;
+        text-align: center;
+    }
+    #contactos .fila h3{
+        margin: 20px 0 3px 0;
+    }
+    #contactos .fila .media{
+        display: block;
+    }
+    #contactos.fila input{
+        width: 90%;
+    }
+    #contactos textarea{
+        width: 90%;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    #inicio header .contenido-header{
+        padding: 20px;
+    }
+    #inicio header .contenido-header .nav-responsive{
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color: #252a25;
+        z-index: 99%;
+
+    }
+    .nav-responsive ul{
+        display: block !important;
+
+    }
+    .nav-responsive ul li{
+        border-bottom: 1px  solid #fff;
+        padding: 10px 0px;
+    }
+
+}
